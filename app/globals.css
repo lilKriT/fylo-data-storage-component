@@ -34,8 +34,17 @@ body {
 }
 
 body {
-  background-image: url("/bg-desktop.png");
+  background-image: url("/bg-mobile.png");
   background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (width > 1024px) {
+  body {
+    background-image: url("/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+  }
 }
