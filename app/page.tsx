@@ -6,7 +6,7 @@ const iconStyle =
 export default function Home() {
   return (
     <section className="min-h-dvh flex justify-center items-center">
-      <div className="flex gap-8">
+      <div className="flex gap-8 w-full max-w-4xl">
         {/* Left box */}
         <div className="min-w-88 flex flex-col gap-8 bg-blue-850 p-10 rounded-xl rounded-tr-[6rem]">
           <Image
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         {/* Right box */}
-        <div className="flex flex-col justify-between items-start bg-blue-850 p-10 rounded-xl">
+        <div className="flex flex-col items-start bg-blue-850 p-10 rounded-xl grow relative">
           <p>
             You’ve used{" "}
             <strong className="font-semibold text-blue-200">815 GB</strong> of
@@ -54,15 +54,22 @@ export default function Home() {
           </p>
 
           {/* Custom made progress bar */}
-          <div className="w-full h-6 rounded-full bg-blue-950 p-1">
+          <div className="w-full h-6 rounded-full bg-blue-950 p-1 mt-4">
             <div className="w-[81.5%] h-full rounded-full bg-linear-to-r from-grad-orange to-grad-red"></div>
           </div>
 
-          <div className="flex w-full justify-between">
+          <div className="flex w-full justify-between text-blue-200 mt-2">
             <p>0 GB</p>
             <p>1000 GB</p>
           </div>
-          <p>185 GB Left</p>
+
+          {/* Tooltip-thingy */}
+          <p
+            className="absolute top-0 inline-flex items-center -translate-y-2/3 right-10  bg-white px-6 py-4 rounded-xl rounded-br-none uppercase font-semibold
+          after:w-0 after:h-0 after:border-10 after:border-transparent after:border-t-white after:border-r-white after:absolute after:right-0 after:bottom-0 after:translate-y-full"
+          >
+            <span className="text-4xl text-blue-950">185</span>&nbsp; GB Left
+          </p>
         </div>
       </div>
     </section>
