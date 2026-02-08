@@ -6,7 +6,7 @@ const iconStyle =
 export default function Home() {
   return (
     <section className="min-h-dvh flex justify-center items-center">
-      <div className="flex flex-col lg:flex-row lg:items-end gap-4 lg:gap-8 w-full max-w-4xl mx-8 my-32">
+      <div className="flex flex-col md:flex-row md:items-end gap-4 md:gap-8 w-full max-w-4xl mx-8 my-32">
         {/* Left box */}
         <div className="min-w-88 flex flex-col gap-8 bg-blue-850 p-10 rounded-xl rounded-tr-[6rem]">
           <Image
@@ -65,8 +65,8 @@ export default function Home() {
 
           {/* Tooltip-thingy */}
           <p
-            className="absolute inline-flex items-center bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 lg:bottom-auto lg:left-auto lg:translate-x-0 lg:top-0 lg:-translate-y-2/3 lg:right-10  bg-white px-6 py-4 rounded-xl lg:rounded-br-none uppercase font-semibold
-          after:w-0 after:h-0 after:border-10 after:border-transparent lg:after:border-t-white lg:after:border-r-white after:absolute after:right-0 after:bottom-0 after:translate-y-full text-nowrap"
+            className="absolute inline-flex items-center bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 md:bottom-auto md:left-auto md:translate-x-0 md:top-0 md:-translate-y-2/3 md:right-10  bg-white px-6 py-4 rounded-xl md:rounded-br-none uppercase font-semibold
+          after:w-0 after:h-0 after:border-10 after:border-transparent md:after:border-t-white md:after:border-r-white after:absolute after:right-0 after:bottom-0 after:translate-y-full text-nowrap"
           >
             <span className="text-4xl text-blue-950">185</span>
             &nbsp; GB Left
